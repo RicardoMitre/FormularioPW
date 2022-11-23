@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:&nbsp;</label>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="data">Data de Nascimento:&nbsp;</label>
+            <input type="date" id="data" name="data"><br>
+            <label for="email">Email:&nbsp;</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="tele">Telefone:&nbsp;</label>
+            <input type="tel" id="tele" name="tele" placeholder="xxxxx-xxxx" pattern="[0-9]{5}-[0-9]{4}">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados Academicos</legend>
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso">
+                <option value="ads">ADS</option>
+                <option value="outro">Outro</option>
+            </select><br>
+            <label for="sem">Semestre:&nbsp;</label>
+            <input type="radio" id="um" name="semestre" value="1°">
+            <label for="radio">1°</label>
+            <input type="radio" id="dois" name="semestre" value="2°">
+            <label for="radio">2°</label>            
+            <input type="radio" id="tres" name="semestre" value="3°">
+            <label for="radio">3°</label>
+            <input type="radio" id="quatro" name="semestre" value="4°">
+            <label for="radio">4°</label>
+            <input type="radio" id="cinco" name="semestre" value="5°">
+            <label for="radio">5°</label>
+        </fieldset>
+        
+        <fieldset>
+            <label for="trabalha">Trabalha?&nbsp;</label>
+            <input type="checkbox" id="trabalha" name="trabalha" value="sim"><br>
+            <label for="local">Local de trabalho:&nbsp;</label>
+            <input type="text" id="local" name="local"><br>
+            <label for="exp">Descreva sua experiência</label><br>
+            <textarea name="exp" id="exp" cols="50" rows="5"></textarea>
+        </fieldset>
+        
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <p>ir para <a href="index.html">index.html</a></p>
+</body>
+</html>
